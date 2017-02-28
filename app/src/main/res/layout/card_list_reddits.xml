@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    card:id="@+id/card_reddits"
+    style="@style/AppTheme.Card.Margins"
+    card:layout_width="match_parent"
+    card:layout_height="wrap_content"
+    app:cardElevation="5dp"
+    card:elevation="5dp"
+    app:cardCornerRadius="5dp">
+
+    <LinearLayout
+        card:layout_width="match_parent"
+        card:layout_height="wrap_content"
+        card:orientation="horizontal"
+        card:padding="5dp">
+
+        <LinearLayout
+            card:layout_width="match_parent"
+            card:layout_height="wrap_content"
+            card:layout_gravity="center_vertical"
+            card:layout_weight="5"
+            card:orientation="vertical"
+            card:elevation="5dp">
+
+            <com.github.siyamed.shapeimageview.CircularImageView
+                card:id="@+id/icon_img"
+                card:layout_width="80dp"
+                card:layout_height="60dp"
+                card:src="@drawable/splash"
+                app:siRadius="6dp"
+                app:siBorderWidth="3dp"
+                app:siBorderColor="@color/redditOrange"
+                app:siSquare="true"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            card:layout_width="match_parent"
+            card:layout_height="wrap_content"
+            card:layout_gravity="center_vertical"
+            card:layout_weight="2"
+            card:orientation="vertical"
+            card:paddingLeft="5pt">
+
+            <TextView
+                card:id="@+id/display_name"
+                card:layout_width="match_parent"
+                card:layout_height="wrap_content"
+                card:layout_marginBottom="@dimen/margin_small"
+                card:paddingBottom="@dimen/margin_normal"
+                card:paddingRight="@dimen/margin_normal"
+                card:textSize="@dimen/text_size_large"
+                card:text="Donald Trump"
+                card:textColor="@color/colorPrimaryDark"
+                card:textStyle="bold" />
+            <TextView
+                card:id="@+id/public_description"
+                card:layout_width="match_parent"
+                card:layout_height="50dp"
+                card:layout_marginBottom="@dimen/margin_small"
+                card:paddingBottom="@dimen/margin_normal"
+                card:paddingRight="@dimen/margin_large"
+                card:textSize="12sp"
+                card:text="Donald Trump"
+                card:textColor="@color/redditText"
+                card:textStyle="normal"
+                card:textAlignment="textStart"
+                card:maxLines="3" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
